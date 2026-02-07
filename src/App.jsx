@@ -14,7 +14,7 @@ function App() {
       <Person></Person>
       <Person></Person>
      
-      
+      <Student></Student>
     </>
   )
 }
@@ -24,6 +24,16 @@ function Person(){
   const person={name:'Sohanur',age:12}
   return(
    <h3>I am {person.name} with age: {age}</h3>
+  )
+}
+
+function Student(){
+  return (
+    <div className='student'>
+      <h3>I am a student</h3>
+      <p>Name:Sohanur Rahman</p>
+      <p>Age:25</p>
+    </div>
   )
 }
 
