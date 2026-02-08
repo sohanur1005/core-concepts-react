@@ -14,7 +14,7 @@ function App() {
       <Todo task="Learn React"
       isDone={true}></Todo>
       <Todo task="Explore core concepts" 
-      isDone={true}></Todo>
+      isDone={false}></Todo>
       <Todo task="Try jsx"
       isDone={true}></Todo>
       {/* <Device name="Laptop" price="50000"></Device>
