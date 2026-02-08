@@ -15,6 +15,7 @@ function App() {
       <Person></Person>
      
       <Student></Student>
+      <Developer></Developer>
     </>
   )
 }
@@ -34,6 +35,22 @@ function Student(){
       <p>Name:Sohanur Rahman</p>
       <p>Age:25</p>
     </div>
+  )
+}
+
+function Developer(){
+  const developerStyle={
+    border:'2px solid purple',
+    margin:'20px',
+    padding:'20px',
+    borderRadius:'20px'
+  }
+  return(
+    <div style={developerStyle}>
+      <h5>Devo Devo</h5>
+      <p>Coding</p>
+    </div>
+
   )
 }
 
