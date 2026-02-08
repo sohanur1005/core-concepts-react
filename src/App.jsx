@@ -10,30 +10,42 @@ function App() {
     <>
       
       <h1>Vite + React</h1>
+      <Device name="Laptop" price="50000"></Device>
+      <Device name="Mobile" price="20000"></Device>
+      <Device name="Watch" price="5000"></Device>
       <Person></Person>
-      <Person></Person>
-      <Person></Person>
-     
+      <Student grade="7" score="99"></Student>
       <Student></Student>
       <Developer></Developer>
     </>
   )
 }
 
-function Person(){
+function Device(props){
+  console.log(props)
+  return <h2>This device: {props.name} Price: {props.price} </h2>
+}
+
+
+function Person(props){
+  console.log(props)
   const age=25;
-  const person={name:'Sohanur',age:12}
+  const person={name:'Sohanur',age:'12'}
   return(
    <h3>I am {person.name} with age: {age}</h3>
   )
 }
 
-function Student(){
+// Destructuring
+const {grade,score}={grade:"7",score:"99"}
+function Student({grade,score}){
+  console.log(grade,score)
   return (
+    
     <div className='student'>
       <h3>I am a student</h3>
-      <p>Name:Sohanur Rahman</p>
-      <p>Age:25</p>
+      <p>Score: {score}</p>
+      <p>Grade: {grade}</p>
     </div>
   )
 }
