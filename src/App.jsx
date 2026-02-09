@@ -3,20 +3,28 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Todo from './Todo'
+import Actor from './Actor'
 
 function App() {
-
+  const actors=["Jasim","Rubel","Salman"]
 
   return (
     <>
 
       <h1>Vite + React</h1>
-      <Todo task="Learn React"
+      <Actor name={'Sohanur'}></Actor>
+      {
+        actors.map(actor => <Actor name={actor}></Actor>)
+      }
+      
+     
+
+      {/* <Todo task="Learn React"
       isDone={true}></Todo>
       <Todo task="Explore core concepts" 
       isDone={false}></Todo>
       <Todo task="Try jsx"
-      isDone={true}></Todo>
+      isDone={true}></Todo> */}
       {/* <Device name="Laptop" price="50000"></Device>
       <Device name="Mobile" price="20000"></Device>
       <Device name="Watch" price="5000"></Device>
@@ -24,6 +32,7 @@ function App() {
       <Student grade="7" score="99"></Student>
       <Student></Student>
       <Developer></Developer> */}
+      
     </>
   )
 }
